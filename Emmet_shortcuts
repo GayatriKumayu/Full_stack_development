@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--This line tell about it is a htnl document ,version5. -->
+<html lang="en">
+<!--This line tell that the given document follows english language -->
+
+<head>
+    <meta charset="UTF-8">
+    <!--uniform transformation formate with character set 8 means only show what are you typing -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--means this webpage will also run on internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- means when this page  load on other devices,webpage widht will be equal to device width with initial value is 1,if you zoom in this value will less than 1 and if you zoom out webpage value will be greater than 1-->
+    <title>Document</title><!-- title of webpage-->
+</head>
+
+<body>
+    <!--Some shortcuts of emmet
+    Class shortcut-
+    1 .(tagname.classname)  then press enter 
+    p.hello-->
+    <p class="hello"></p>
+    <!-- Id making shortcut
+     tagname#idname
+    p#idname-->
+    <p id="idname"></p>
+    <!-- adding elements in a tag 
+    tagname[elementname="attribute"] then press tab
+    img[src="hello.jpg"]-->
+    <img src="hello.jpg" alt="">
+    <!-- content adding shortcut-->
+    <!-- tagname{content}
+    p{hello world}-->
+    <p>helloworld</p>
+
+    <!-- --------------------------------------- Parenting and child shortcuts------------------------------------------------>
+
+<!-- tagname>tagname which you inside > tagname then tab-->
+<!-- div>p>li-->
+<div>
+    <p>
+        <li></li>
+    </p>
+</div>
+
+<!-- div>p>li*5-->
+<div>
+    <p>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </p>
+</div>
+<!--div.class>p.class1>li*5-->
+<div class="class">
+    <p class="class">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </p>
+</div>
+<!-- ---------------------------------------------Adding sublings------------------------------------------------------------->
+
+<!-- div>p+p+p -->
+<div>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+
+<!-----------------------------------------------Grouping--------------------------------------------------------------------->
+
+<!-- div>(nav>li*5)+section-->
+
+<div>
+    <nav>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </nav>
+    <section></section> <!-- after + sign tag will print outside the parents div-->
+</div>
+
+<!-- img[src=image.jpg][alt=image] -->
+<img src="image.jpg" alt="image">
+
+
+<!-- a[href='#'].link -->
+
+<a href="#" class="link"></a>
+</body>
+
+</html>
